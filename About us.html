@@ -1,0 +1,206 @@
+<!-- Navigation -->
+<nav>
+  <div class="logo">🍞 Golden Crust</div>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="About us.html">About Us</a></li>
+    <li><a href="contact us.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+<style>
+  /* Navigation bar */
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* reduced more */
+    z-index: 10;
+    animation: slideDown 1s ease-out;
+  }
+
+  nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffcc66;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 10px; /* reduced more */
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #ffcc66;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  @keyframes slideDown {
+    from {transform: translateY(-100%);}
+    to {transform: translateY(0);}
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Golden Crust</title>
+  <style>
+    /* Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fff5e6, #ffe6cc);
+      color: #333;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3rem;
+      margin: 0;
+      z-index: 1;
+    }
+
+    header p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.2rem;
+    }
+
+    .about-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .about-section h1 {
+      text-align: center;
+      color: #b5651d;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .about-section p {
+      line-height: 1.9;
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .highlight {
+      color: #d97706;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #b5651d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Golden Crust Bakery</h1>
+    <p>Freshly Baked Happiness Every Day</p>
+  </header>
+
+  <section class="about-section">
+    <h1>About Us</h1>
+    <p>
+      Welcome to <span class="highlight">Golden Crust</span>, your trusted Sri Lankan bakery 
+      where <strong>tradition meets taste</strong>. Since our beginning, we have been 
+      passionate about creating freshly baked goods that bring warmth 
+      and joy to every home.  
+    </p>
+    <p>
+      From soft breads and delightful pastries to traditional Sri Lankan 
+      sweets, we use only the <span class="highlight">finest ingredients</span> to ensure every bite 
+      is full of flavor and love. Our mission is simple: to share the 
+      true taste of Sri Lanka while keeping our baking fresh, affordable, 
+      and made with care.
+    </p>
+    <p>
+      At Golden Crust, we believe every occasion deserves something sweet, 
+      and every customer is part of our family. Visit us and 
+      experience the bakery where <strong>every crust is golden!</strong>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Golden Crust Bakery | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

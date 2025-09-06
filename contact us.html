@@ -1,0 +1,229 @@
+<!-- Navigation -->
+<nav>
+  <div class="logo">🍞 Golden Crust</div>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="About us.html">About Us</a></li>
+    <li><a href="contact us.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+<style>
+  /* Navigation bar */
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* reduced more */
+    z-index: 10;
+    animation: slideDown 1s ease-out;
+  }
+
+  nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffcc66;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 10px; /* reduced more */
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #ffcc66;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  @keyframes slideDown {
+    from {transform: translateY(-100%);}
+    to {transform: translateY(0);}
+  }
+</style>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Golden Crust</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Background video */
+    .bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      filter: brightness(70%);
+    }
+
+    /* Navigation */
+    nav {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffcc66;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background: #ffcc66;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    /* Contact Section */
+    .contact-container {
+      max-width: 700px;
+      margin: 150px auto 50px;
+      padding: 40px;
+      background: rgba(0,0,0,0.5); /* semi-transparent over video */
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .contact-container h1 {
+      color: #ffcc66;
+      margin-bottom: 20px;
+    }
+
+    .contact-container p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .contact-container a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #ffcc66;
+      color: #333;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact-container a:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">🍞 Golden Crust</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about us.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you!</p>
+    <p><strong>Phone:</strong> +94 70 773 3399</p>
+    <p><strong>Email:</strong> uknown2@gmail.lk</p>
+    <p><strong>Address:</strong>21,Road,Colombo 10</p>
+    <a href="unkown@gmail.com">Send Email</a>
+  </div>
+
+</body>
+</html>
+
